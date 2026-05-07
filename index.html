@@ -7,105 +7,54 @@
    <link rel="stylesheet" href="public/style.css">
 </head>
 <body class="font-parkinsans">
-   <!-- <header class="relative min-h-screen overflow-hidden flex flex-col">
-      <img src=".public/assets/images/hero.webp" class="absolute w-full h-full object-cover -z-10">
-      <nav class="flex flex-wrap justify-between md:justify-center items-center backdrop-blur-xs pt-2 md:pt-0">
-         <button class="md:hidden" id="menu-btn">
-            <img src=".public/assets/images/menu.png" alt="Menu" class="size-10 order-2">
-         </button>
-         <ul class="main-menu hidden items-center justify-center gap-2 md:gap-8 xl:gap-20 font-title uppercase md:text-lg xl:text-xl text-lime-950 w-full flex-col text-center mt-4 md:w-auto md:flex md:flex-row backdrop-blur-xs md:backdrop-none">
+
+   <header class="absolute inset-x-0 top-0 z-50">
+      <div class="relative">
+         <nav class="h-fit flex justify-between items-center gap-14 p-4 font-title text-tertiary text-lg border-b border-tertiary bg-lime-950/15 backdrop-blur-xl md:justify-between md:px-10 lg:justify-center lg:mx-0 md:text-xl 2xl:text-2xl">
+            <a href="#">
+               <img src="public/assets/images/logo.png" alt="Logo" class=" size-24 md:size-32">
+            </a>
+            <button class="relative h-12 w-24 md:hidden" id="burger-btn">
+               <span class="mobile-btn opacity-100 scale-100" id="open-btn">Menu</span>
+               <span class="mobile-btn opacity-0 scale-75" id="close-btn">X</span>
+            </button>
+
+            <!-- Desktop menu -->
+            <ul class="menu-desktop hidden md:flex gap-24 p-5">
+               <li>
+                  <a href="#" class="btn-after">Home</a>
+               </li>
+               <li>
+                  <a href="#" class="btn-after">Shop</a>
+               </li>
+               <li>
+                  <a href="#" class="btn-after">Blog</a>
+               </li>
+               <li>
+                  <a href="#" class="btn-after">Contact</a>
+               </li>
+            </ul>
+
+         </nav>
+         <!-- Mobile menu -->
+         <ul class="hidden absolute top-full left-0 z-[60] flex-col items-end w-full gap-4 bg-lime-950/90 py-6 pr-8 text-center font-title text-lg text-tertiary md:hidden" id="mobile-menu">
             <li>
-               <a href="#">Home</a>
+               <a href="#" class="btn-after">Home</a>
             </li>
             <li>
-               <a href="#">Shop</a>
+               <a href="#" class="btn-after">Shop</a>
             </li>
             <li>
-               <a href="#">
-                  <img src=".public/assets/images/logo.png" alt="Logo" class="w-20 md:w-28">
-               </a>
+               <a href="#" class="btn-after">Blog</a>
             </li>
             <li>
-               <a href="#">Blog</a>
+               <a href="#" class="btn-after">Contact</a>
             </li>
-            <li>
-               <a href="#">Contact</a>
-            </li>
-            <div class="cta flex gap-2 md:ml-8">
-               <a href="#">
-                  <img src=".public/assets/images/cart.png" alt="Panier" class="size-8">
-               </a>
-               <a href="#">
-                  <img src=".public/assets/images/user.png" alt="Utilisateur" class="size-8">
-               </a>
-            </div>
          </ul>
-      </nav>
-      <section class="absolute inset-0 flex-1 flex flex-col justify-center items-center text-center gap-4 px-2 xl:items-start xl:text-left xl:pl-40 2xl:pl-80">
-         <h2 class="text-4xl font-truculenta uppercase font-mediuml">Good for health</h2>
-         <h1 class="text-7xl font-title uppercase">Fresh fruit healthy <span class="text-orange">life</span></h1>
-         <p>We don’t always choose what we want, but what life offers.</p>
-         <button class="btn w-fit">Shop now</button>
-      </section>
-      <img src=".public/assets/images/kiwii.png" class="absolute right-20 top-1/2 -translate-y-1/2 pointer-events-none hidden xl:block w-100 2xl:w-137.5 3xl:w-200">
+      </div>
    </header>
 
    <main>
-      <section>
-
-      </section>
-   </main> -->
-
-   <!-- <header class="absolute inset-x-0 top-0 z-50">
-      <nav class="flex flex-wrap justify-end md:justify-center h-20 md:h-auto backdrop-blur-xs pt-2 pr-8 md:pt-0">
-         <button class="md:hidden" id="menu-btn"">
-            <img src=".public/assets/images/menu.png" alt="Menu" class="size-10 cursor-pointer">
-         </button>
-         <ul class="main-menu hidden items-center justify-center gap-2 md:gap-8 xl:gap-20 font-title uppercase md:text-lg xl:text-xl text-lime-950 w-full flex-col text-center mt-4 md:w-auto md:flex md:flex-row backdrop-blur-xs md:backdrop-none">
-            <li>
-               <a href="#">Home</a>
-            </li>
-            <li>
-               <a href="#">Shop</a>
-            </li>
-            <li>
-               <a href="#">
-                  <img src=".public/assets/images/logo.png" alt="Logo" class="w-20 md:w-28">
-               </a>
-            </li>
-            <li>
-               <a href="#">Blog</a>
-            </li>
-            <li>
-               <a href="#">Contact</a>
-            </li> -->
-            <!-- <div class="cta flex gap-2 md:ml-8">
-               <a href="#">
-                  <img src=".public/assets/images/cart.png" alt="Panier" class="size-8">
-               </a>
-               <a href="#">
-                  <img src=".public/assets/images/user.png" alt="Utilisateur" class="size-8">
-               </a>
-            </div> -->
-         <!-- </ul>
-      </nav>
-   </header> -->
-
-   <main>
-      <!-- <section class="bg-[url(./assets/images/hero.webp)] bg-cover bg-center relative flex flex-col justify-center text-center gap-4 px-4 min-h-screen items-center overflow-hidden xl:items-start xl:text-left border-4 border-blue-500">
-         <div class="text-content border-4 border-red-500 relative">
-            <h2 class="h2">Good for health</h2>
-            <h1 class="text-7xl font-title uppercase text-primary md:text-8xl">Fresh <span class="green-bg">fruit</span> healthy <span class="green-bg">life</span></h1>
-            <p class="text-lg mt-2.5">We don’t always choose what we want, but what life offers.</p>
-            <button class="btn w-fit mt-4">Shop now</button>
-         </div>
-         <img
-            src=".public/assets/images/kiwii.png"
-            alt=""
-            class="pointer-events-none absolute object-contain right-60 bottom-1/2 translate-y-1/2 hidden xl:block w-3xl"
-         />
-      </section> -->
-
       <section class="bg-[url(./assets/images/hero.webp)] bg-cover bg-center object-cover h-screen w-full flex flex-col justify-center items-center">
          <div class="bottom-pattern bg-[url(./assets/images/bottom-pattern.webp)] bg-contain bg-position-[center_bottom] bottom-0 bg-no-repeat w-full h-25 z-50 absolute"></div>
          <div class="text-container px-8 text-center">
@@ -201,13 +150,25 @@
    <footer></footer>
    
    <script>
-      const mainMenu = document.querySelector('.main-menu');
-      const burgerMenu = document.getElementById('menu-btn');
+      const burgerMenu = document.getElementById('burger-btn');
+      const openBtn = document.getElementById('open-btn');
+      const closeBtn = document.getElementById('close-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
 
       burgerMenu.addEventListener('click', () => {
-         mainMenu.classList.toggle('hidden');
-         mainMenu.classList.toggle('flex');
-      });
+         openBtn.classList.toggle('opacity-100');
+         openBtn.classList.toggle('opacity-0');
+         openBtn.classList.toggle('scale-100');
+         openBtn.classList.toggle('scale-75');
+
+         closeBtn.classList.toggle('opacity-0');
+         closeBtn.classList.toggle('opacity-100');
+         closeBtn.classList.toggle('scale-75');
+         closeBtn.classList.toggle('scale-100');
+
+         mobileMenu.classList.toggle('hidden');
+         mobileMenu.classList.toggle('flex');
+      })
    </script>
 </body>
 </html>

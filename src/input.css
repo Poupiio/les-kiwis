@@ -23,6 +23,9 @@
    .btn {
       @apply rounded-4xl px-10 py-3 bg-secondary text-lime-950 font-title text-xl border border-lime-950 border-b-lime-950 cursor-pointer duration-200 shadow-[0_4px_0_0_#1a2e05] hover:translate-y-0.5 hover:shadow-none;
    }
+   .btn-after {
+      @apply relative inline-block py-2 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-[#E5FD9B] after:transition-all after:duration-300 hover:after:w-full;
+   }
    .img-before {
       @apply relative isolate;
    }
@@ -64,6 +67,12 @@
    .activity-card a .activity-text-content {
       @apply absolute inset-x-0 bottom-[5%] z-10 p-4;
       color: #E5FD9B;
+   }
+   .mobile-btn {
+      @apply text-5xl cursor-pointer absolute inset-0 flex items-center justify-center transition-all duration-300;
+      color: #E5FD9B;
+      text-shadow: 0 0 8px #AC4000;
+      font-family: "All Is Quiet", sans-serif;
    }
 }
 
