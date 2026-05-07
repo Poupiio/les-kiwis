@@ -43,7 +43,7 @@
       background: #EFD1E0;
    }
    .activity-card {
-      @apply w-[90%] h-82 md:flex-[0_0_30%] md:max-w-[30%];
+      @apply w-[90%] h-82 md:flex-[0_0_30%] md:max-w-[30%] xl:h-96;
    }
    .activity-card a {
       @apply relative block h-full w-full overflow-hidden rounded-lg bg-cover bg-center duration-300 hover:md:scale-[1.05];
