@@ -12,11 +12,11 @@
       <div class="relative">
          <nav class="h-fit flex justify-between items-center gap-14 p-4 font-title text-tertiary text-lg border-b border-tertiary bg-lime-950/15 backdrop-blur-xl md:justify-between md:px-10 lg:justify-center lg:mx-0 md:text-xl 2xl:text-2xl">
             <a href="#">
-               <img src="public/assets/images/logo.png" alt="Logo" class=" size-24 md:size-32">
+               <img src="public/assets/images/logo.png" alt="Logo" class="size-24 md:size-32 max-[400px]:size-16">
             </a>
-            <button class="relative h-12 w-24 md:hidden" id="burger-btn">
+            <button class="relative w-[100px] h-12 px-2 py-1 md:hidden" id="burger-btn">
                <span class="mobile-btn opacity-100 scale-100" id="open-btn">Menu</span>
-               <span class="mobile-btn opacity-0 scale-75" id="close-btn">X</span>
+               <span class="mobile-btn opacity-0 scale-75 translate-x-5" id="close-btn">X</span>
             </button>
 
             <!-- Desktop menu -->
@@ -55,12 +55,12 @@
    </header>
 
    <main>
-      <section class="bg-[url(./assets/images/hero.webp)] bg-cover bg-center object-cover h-screen w-full flex flex-col justify-center items-center">
+      <section class="bg-[url(./assets/images/banner.webp)] bg-cover bg-center object-cover h-screen w-full flex flex-col justify-center items-center relative">
          <div class="bottom-pattern bg-[url(./assets/images/bottom-pattern.webp)] bg-contain bg-position-[center_bottom] bottom-0 bg-no-repeat w-full h-25 z-50 absolute"></div>
          <div class="text-container px-8 text-center">
             <h2 class="h2">Good for health</h2>
-            <h1 class="text-7xl font-title uppercase text-primary lg:text-8xl 2xl:text-9xl">Fresh <span class="green-bg">fruit</span> healthy <span class="green-bg">life</span></h1>
-            <p class="text-lg mt-8">We don’t always choose what we want, but what life offers.</p>
+            <h1 class="text-7xl font-title uppercase text-primary lg:text-8xl 2xl:text-9xl max-[400px]:text-4xl">Fresh <span class="green-bg">fruit</span> healthy <span class="green-bg">life</span></h1>
+            <p class="md:text-lg mt-8">We don’t always choose what we want, but what life offers.</p>
             <button class="btn w-fit mt-4">Shop now</button>
          </div>
       </section>

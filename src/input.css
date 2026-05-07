@@ -69,7 +69,7 @@
       color: #E5FD9B;
    }
    .mobile-btn {
-      @apply text-5xl cursor-pointer absolute inset-0 flex items-center justify-center transition-all duration-300;
+      @apply text-5xl max-[400px]:text-3xl cursor-pointer absolute inset-0 flex items-center justify-center transition-all duration-300;
       color: #E5FD9B;
       text-shadow: 0 0 8px #AC4000;
       font-family: "All Is Quiet", sans-serif;
@@ -85,7 +85,7 @@
 }
 
 @utility h2 {
-   @apply text-4xl font-title uppercase font-bold text-primary md:text-6xl;
+   @apply text-4xl font-title uppercase font-bold text-primary md:text-6xl max-[400px]:text-2xl;
 }
 
 @utility h3 {
