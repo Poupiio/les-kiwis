@@ -91,10 +91,14 @@
 }
 
 @utility h2 {
-   @apply text-4xl font-title uppercase font-bold text-primary md:text-6xl max-[400px]:text-2xl;
+   @apply text-5xl font-title uppercase font-bold text-primary md:text-6xl max-[400px]:text-3xl;
 }
 
 @utility h3 {
+   @apply text-xl font-truculenta uppercase font-bold text-lime-950 md:text-2xl mt-4 mb-10;
+}
+
+@utility activity-h3 {
    @apply text-xl font-bold;
 }
 
@@ -103,5 +107,5 @@
 }
 
 @utility p-card {
-   @apply leading-5 md:leading-6 text-sm md:text-lg;
+   @apply leading-5 md:leading-6 text-sm md:text-base;
 }
