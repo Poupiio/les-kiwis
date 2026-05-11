@@ -80,16 +80,16 @@
       font-family: "All Is Quiet", sans-serif;
    }
    .two-columns {
-      @apply flex flex-col-reverse lg:flex-row lg:items-center p-[3rem_1rem] lg:p-[4em_2em] xl:p-[5em_6em];
+      @apply relative flex flex-col-reverse lg:flex-row lg:items-center p-[3rem_1rem] lg:p-[4em_2em] xl:p-[5em_6em];
    }
    .two-columns .img-container {
-      @apply flex items-center lg:-w-1/2;
+      @apply flex items-center lg:w-1/2;
    }
    .two-columns .img-container img {
       @apply w-full object-cover rounded-lg;
    }
    .two-columns .text-container {
-      @apply flex flex-col justify-center text-left lg:p-6;
+      @apply flex flex-col justify-center text-left gap-6 lg:p-6 lg:w-1/2;
    }
    .two-columns .text-container a {
       @apply my-8;
@@ -104,12 +104,15 @@
   box-shadow: inset 0 -0.7em 0 #FBBC1F;
 }
 
+@utility title-container {
+   @apply text-center flex flex-col gap-6 mb-5;
+}
 @utility h2 {
    @apply text-5xl font-title uppercase font-bold text-primary md:text-6xl max-[400px]:text-3xl;
 }
 
 @utility h3 {
-   @apply text-xl font-truculenta uppercase font-bold text-lime-950 md:text-2xl my-5 lg:my-8;
+   @apply text-xl font-truculenta uppercase font-bold text-lime-950 md:text-2xl;
 }
 
 @utility activity-h3 {
