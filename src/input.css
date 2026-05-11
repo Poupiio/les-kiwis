@@ -21,9 +21,8 @@
 
 @layer components {
    .btn {
-      @apply rounded-4xl px-10 py-3 font-title text-lime-950 border-lime-950  text-xl cursor-pointer duration-200 border;
+      @apply rounded-4xl px-10 py-3 font-title text-lime-950 border-lime-950  text-xl cursor-pointer duration-200 border w-fit text-center;
       background-color: #E5FD9B;
-      
       box-shadow: 0 4px 0 0 #2D3A12;
    }
    .btn:hover {
@@ -80,6 +79,21 @@
       text-shadow: 0 0 8px #AC4000;
       font-family: "All Is Quiet", sans-serif;
    }
+   .two-columns {
+      @apply flex flex-col-reverse lg:flex-row lg:items-center p-[3rem_1rem] lg:p-[4em_2em] xl:p-[5em_6em];
+   }
+   .two-columns .img-container {
+      @apply flex items-center lg:-w-1/2;
+   }
+   .two-columns .img-container img {
+      @apply w-full object-cover rounded-lg;
+   }
+   .two-columns .text-container {
+      @apply flex flex-col justify-center text-left lg:p-6;
+   }
+   .two-columns .text-container a {
+      @apply my-8;
+   }
 }
 
 @utility green-bg {
@@ -95,7 +109,7 @@
 }
 
 @utility h3 {
-   @apply text-xl font-truculenta uppercase font-bold text-lime-950 md:text-2xl mt-4 mb-10;
+   @apply text-xl font-truculenta uppercase font-bold text-lime-950 md:text-2xl my-5 lg:my-8;
 }
 
 @utility activity-h3 {
@@ -108,4 +122,8 @@
 
 @utility p-card {
    @apply leading-5 md:leading-6 text-sm md:text-base;
+}
+
+@utility two-col-reverse {
+   @apply lg:flex-row-reverse;
 }
