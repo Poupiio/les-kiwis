@@ -21,7 +21,7 @@
 
 @layer components {
    .btn {
-      @apply rounded-4xl px-10 py-3 font-title text-lime-950 border-lime-950  text-xl cursor-pointer duration-200 border w-fit text-center;
+      @apply rounded-4xl px-10 py-3 font-title text-lime-950 border-lime-950 text-xl cursor-pointer duration-200 border w-fit text-center;
       background-color: #E5FD9B;
       box-shadow: 0 4px 0 0 #2D3A12;
    }
@@ -31,6 +31,10 @@
    }
    .btn-after {
       @apply relative inline-block py-2 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-[#E5FD9B] after:transition-all after:duration-300 hover:after:w-full;
+   }
+   .btn-footer {
+      @apply rounded-4xl px-6 py-3 font-title text-lime-950 border-lime-950 text-xl cursor-pointer border w-fit text-center duration-300 hover:bg-lime-950 hover:text-[#E5FD9B] hover:border-[#E5FD9B];
+      background-color: #E5FD9B;
    }
    .img-before {
       @apply relative isolate;
@@ -129,4 +133,20 @@
 
 @utility two-col-reverse {
    @apply lg:flex-row-reverse;
+}
+
+@utility footer-title {
+   @apply uppercase text-2xl lg:text-4xl xl:text-5xl;
+   font-family: "All Is Quiet", sans-serif;
+}
+
+@utility footer-content {
+   @apply flex flex-col items-center text-center gap-2 lg:text-left lg:items-start;
+}
+
+@utility footer-infos {
+   @apply flex items-center justify-center text-left lg:justify-start lg:items-start gap-2;
+}
+@utility footer-bg {
+   background: radial-gradient(circle at top left, rgba(229, 253, 155, 0.16), transparent 28%), radial-gradient(circle at bottom right, rgba(229, 253, 155, 0.16), transparent 28%), rgba(26, 46, 5, 0.904);
 }
