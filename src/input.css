@@ -14,10 +14,10 @@
 }
 
 @font-face {
-    font-family: "All is quiet";
-    src: url("../public/assets/fonts/AllIsQuietDEMO-Regular.otf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
+   font-family: "All is quiet";
+   src: url("../public/assets/fonts/AllIsQuietDEMO-Regular.otf") format("truetype");
+   font-weight: 400;
+   font-style: normal;
 }
 
 @theme {
@@ -99,7 +99,31 @@
       @apply relative flex flex-col-reverse lg:flex-row lg:items-center p-[3rem_1rem] lg:p-[4em_2em] xl:p-[5em_6em];
    }
    .two-columns .img-container {
-      @apply flex items-center lg:w-1/2;
+      @apply flex items-center lg:w-1/2 relative;
+   }
+   .two-columns .img-container::before {
+      @apply absolute bg-cover bg-no-repeat border-2 -z-10 rounded-lg;
+      content: "";
+      top: -15px;
+      left: -15px;
+      width: 95%;
+      height: 95%;
+      border-color: #FBBC1F;
+   }
+   .two-columns.two-col-reverse .img-container::before {
+      right: -15px;
+      left: auto;
+   }
+   @media (min-width: 1024px) {
+      .two-columns .img-container::before {
+         top: -30px;
+         left: -30px;
+         width: 90%;
+         height: 90%;
+      }
+      .two-columns.two-col-reverse .img-container::before {
+         right: -30px;
+      }
    }
    .two-columns .img-container img {
       @apply w-full object-cover rounded-lg;
