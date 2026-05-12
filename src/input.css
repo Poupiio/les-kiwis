@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
 @import "tailwindcss";
 
+@keyframes float {
+   0% {
+      transform: translateY(0px);
+}
+   50% {
+      transform: translateY(-10px);
+   }
+   100% {
+      transform: translateY(0px);
+   }
+}
+
 @font-face {
     font-family: "All is quiet";
     src: url("../public/assets/fonts/AllIsQuietDEMO-Regular.otf") format("truetype");
@@ -111,6 +123,7 @@
 @utility title-container {
    @apply text-center flex flex-col gap-6 mb-5;
 }
+
 @utility h2 {
    @apply text-5xl font-title uppercase font-bold text-primary md:text-6xl max-[400px]:text-3xl;
 }
@@ -129,6 +142,10 @@
 
 @utility p-card {
    @apply leading-5 md:leading-6 text-sm md:text-base;
+}
+
+@utility item-animation {
+   animation: float 2s infinite ease;
 }
 
 @utility two-col-reverse {

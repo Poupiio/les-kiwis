@@ -361,6 +361,12 @@
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
+  .animate-\[float_2s_infinite_ease\] {
+    animation: float 2s infinite ease;
+  }
+  .item-animation {
+    animation: float 2s infinite ease;
+  }
   .resize {
     resize: both;
   }
@@ -789,6 +795,17 @@
       font-size: var(--text-9xl);
       line-height: var(--tw-leading, var(--text-9xl--line-height));
     }
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 @font-face {
